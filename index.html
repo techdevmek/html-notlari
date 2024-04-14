@@ -5,6 +5,13 @@
 <html lang="tr">
 <!-- kafa - meta veriler için bir kap - sayfa dışı öğeleri içerir -->
 <head>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
     <!-- belge başlığı -->
     <title>HTML5 Notları</title>
 
