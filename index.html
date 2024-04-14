@@ -1,0 +1,543 @@
+<!-- Temel HTML -->
+<!-- HTML5 Bildirimi -->
+<!DOCTYPE html>
+<!-- belge kökü - sayfa dili -->
+<html lang="tr">
+<!-- kafa - meta veriler için bir kap - sayfa dışı öğeleri içerir -->
+<head>
+    <!-- belge başlığı -->
+    <title>HTML5 Notları</title>
+
+    <!-- harici bir kaynak ile bağlantı kurmak -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Meta Bilgisi -->
+    <!-- temel url (linkler bu url de aranır) -->
+    <base href="">
+
+    <!-- meta veriler -->
+    <!-- karakter kodlaması -->
+    <meta charset="utf-8">
+    <!-- sayfa açıklaması -->
+    <meta name="description" content="">
+    <!-- ie yi edge eşitleme -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><br>
+    <!-- anahtar kelimeler -->
+    <meta name="keywords" content=""><br>
+    <!-- x saniye sonra linke git 
+    <meta http-equiv="refresh" content="0; url=link"> -->
+    <!-- sayfa yenileme süresi -->
+    <meta http-equiv="refresh" content="no-referrer">
+    <!-- sayfa ve karakter kodlaması belirtme -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- duyarlı web tasarıma yardım -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- sahip/yazar -->
+    <meta name="author" content="mek">
+    <!-- arama motoru izni -->
+    <meta name="robots" content="index, follow">
+    <!-- Sosyal medyada paylaşılma durumunda başlık -->
+    <meta property="og:title" content="Sayfa Başlığı">
+    <!-- sosyal medyada paylaşılma durumunda açıklama -->
+    <meta property="og:description" content="Bu sayfanın kısa bir açıklaması">
+    <!-- sosyal medyada paylaşılma durumunda site simgesi -->
+    <meta property="og:image" content="Resim.jpg">
+    <!-- sayfa dili -->
+    <meta http-equiv="Content-Language" content="tr">
+    <!-- Bu etiket, iOS cihazlarda web sitenizin bir uygulama olarak çalıştırılabileceğini iOS'a bildirir. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Bu etiket, iOS uygulamanızda durum çubuğunun görünümünü belirler. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- tarayıcı sekmesi rengi -->
+    <meta name="theme-color" content="#123456">
+    <!-- uygulama ismi -->
+    <meta name="application-name" content="Uygulama Adı">
+    <!-- yapılırken kullanılan uygulama -->
+    <meta name="generator" content="VSC">
+
+    <!-- dahili css -->
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<!-- gövde - sayfa içi öğeleri içerir -->
+<body>
+    <!-- önemliden/önemsize başlık -->
+    <h1>Başlık</h1>
+    <h2>Başlık</h2>
+    <h3>Başlık</h3>
+    <h4>Başlık</h4>
+    <h5>Başlık</h5>
+    <h6>Başlık</h6>
+
+    <!-- paragraf -->
+    <p>Paragraf</p>
+
+    <!-- satır sonu -->
+    <br>
+
+    <!-- tematik kopuş -->
+    <hr>
+
+    <!-- yorum satırı -->
+
+    <!-- Biçimlendirme -->
+
+    <!-- kısaltma - title = ek bilgi - fare ile üstüne geldiğinde gözükür -->
+    <abbr title="World Wide Web">www</abbr><br>
+
+    <!-- iletişim bilgileri -->
+    <address>İstanbul, Türkiye</address><br>
+
+    <!-- kalın metin -->
+    <b>kalın metin</b><br>
+
+    <!-- çift yönlü metin izolasyonu - farklı yöndeki metinleri diğerlerinden yalıtır -->
+    <bdi>Türkçe</bdi>
+    <bdi>Arapça</bdi><br>
+
+    <!-- çift yönlü geçersiz kılma - metnin yönünü belirle -->
+    <bdo dir="ltr">yazı</bdo>
+    <bdo dir="rtl">yazı</bdo><br>
+
+    <!-- alıntı -->
+    <blockquote cite="kaynak">Alıntı</blockquote><br>
+
+    <!-- eser -->
+    <cite>Harry Potter</cite><br>
+
+    <!-- bilgisayar kodu -->
+    <code>Button</code><br>
+
+    <!-- silinen ve eklenen kısım -->
+    <p><del cite="" datetime="2020-01-01">30</del></p>
+
+    <!-- terim ve tanım -->
+    <p><dfn>HTML</dfn> Hyper Text Markup Language</p>
+
+    <!-- vurgulu metin -->
+    <em>vurgulu metin</em><br>
+
+    <!-- alternatif bir ses veya farklı bir ruh hali -->
+    <i>SELAM!</i><br>
+
+    <!-- klavye girişi -->
+    <p><kbd>CTRL</kbd>+<kbd>C</kbd></p>
+
+    <!-- işaretli/vurgulu metin -->
+    <mark>CSS</mark><br>
+
+    <!-- etiket tanımlama -->
+    <label for="gorev">gorev:</label>
+    <!-- skaler ölçümü -->
+    <meter id="gorev" min="0" max="10" value="2">2/10</meter>
+    <label for="disk">disk:</label>
+    <meter id="disk" low="60" high="85" optimum="75" max="100" min="1" value="80">80%</meter><br>
+
+    <!-- önceden biçimlendirilmiş metin -->
+    <pre>selam       sealm      
+        selam
+    </pre><br>
+
+    <label for="indirme">indirme:</label>
+    <!-- ilerleme çubuğu -->
+    <progress max="100" value="10">10%</progress><br>
+
+    <!-- kısa alıntı -->
+    <q cite="kaynak">kısa alıntı</q><br>
+
+    <!-- yakut ek açıklaması (tanım yada telaffuz) -->
+    <ruby>
+        <!-- <rp>= Çalışmazsa, <rt>=çalışırsa -->
+        Two<rp>(</rp><rt>Tuu</rt><rp>)</rp>
+    </ruby><br>
+
+    <!-- artık doğru değil veya alakalı değil -->
+    <s>alakasız</s><br>
+
+    <!-- örnek çıktı -->
+    <samp>dosya indirildi</samp><br>
+
+    <!-- daha küçük bir metin -->
+    <small>metin</small><br>
+
+    <!-- önemli metin -->
+    <small>önemli metin</small><br>
+
+    <!-- üst simge metni -->
+    <p>1<sup>1</sup></p>
+
+    <!-- alt simge metni -->
+    <p>H<sub>2</sub>O</p>
+
+    <!-- gizli kap -->
+    <template>gizli alan</template>
+
+    <!-- saat - tarih -->
+    <p><time>20:00</time> <time datetime="2008-04-13">Doğum Günüm</time></p>
+
+    <!-- yanlış yazılmış kelimeler -->
+    <u>Yalnış</u><br>
+
+    <!-- değişken -->
+    <var>x</var><br>
+
+    <!-- satır sonu nereye gelmeli -->
+    <p>sadas<wbr>sadas<wbr>sdasdads</p>
+
+    <hr>
+
+    <!-- Formlar ve Giriş -->
+    <!-- form -->
+    <form action="" method="post" enctype="multipart/form-data" id="formum" autocomplete="off" accept-charset="utf-8" name="" target="_blank" role="" novalidate>
+        <label for="ad">Ad:</label>
+        <!-- giriş alanı -->
+        <input type="text" name="ad:" id="ad" required placeholder="adınızı yazınız..."><br>
+        <label>Soyad:
+        <input type="text" name="soyad:" id="soyad" readonly placeholder="soyadınızı yazınız..." ></label><br>
+        <label for="lakap">Lakap:</label>
+        <input type="text" name="lakap:" id="lakap" disabled placeholder="lakabınızı yazınız..." value="MEK"><br>
+        <label for="renk">Renk:</label>
+        <input type="color" name="renk:" id="renk" value="#ff3196"><br>
+        <label for="onay">Onay:</label>
+        <input type="checkbox" checked name="onay" id="onay" value="onaylıyorum"><br>
+        <label for="erkek">erkek</label>
+        <input type="radio" checked name="cinsiyet" id="erkek" value="erkek">
+        <label for="kadin">kadın</label>
+        <input type="radio" name="cinsiyet" id="kadin" value="kadın"><br>
+        <label for="eposta">E-posta:</label>
+        <input type="email" name="eposta" id="eposta" minlength="5" maxlength="40"><br>
+        <label for="sifre">Şifre:</label>
+        <input type="password" name="sifre:" id="sifre" pattern="[0-9]{10}"><br>
+        <label for="tarih">Tarih:</label>
+        <input type="date" name="tarih:" id="tarih" min="2008-04-13" max="2024-04-13" value="0001-01-01"><br>
+        <label for="detaylitarih">Detaylı Tarih:</label>
+        <input type="datetime-local" name="detaylitarih" id="detaylitarih" value="2008-04-13 20:00"><br>
+        <label for="dosya">Dosya:</label>
+        <input type="file" name="dosya[]" id="dosya" multiple accept="image/*"><br>
+        <label for="ay">Ay:</label>
+        <input type="month" name="ay:" id="ay"><br>
+        <label for="numara">Numara:</label>
+        <input type="number" name="numara" id="numara" min="0" max="100" step="10"><br>
+        <label for="ses">Ses:</label>
+        <input type="range" name="ses" id="ses" min="0" max="100" step="10"><br>
+        <label for="arama">Arama:</label>
+        <input type="search" name="arama" id="arama" autocomplete="on" autofocu><br>
+        <label for="tel">Tel:</label>
+        <input type="tel" name="tel" id="tel"><br>
+        <label for="saat">Saat:</label>
+        <input type="time" name="saat" id="saat"><br>
+        <label for="url">Url:</label>
+        <input type="url" name="url" id="url" size="15"><br>
+        <label for="hafta">Hafta:</label>
+        <input type="week" name="hafta" id="hafta" max="2020-W10"><br>
+        <label for="gizli">Gizli:</label>
+        <input type="hidden" name="domal" value="tm"><br>
+        <input type="reset" value="sıfırla">
+        <input type="submit" value="gönder">
+        <input type="submit" form="" formaction="" formenctype="" formmethod="" formnovalidate formtarget="_self" value="farklı yolla"> 
+        <input type="image" src="Resim.jpg" width="60" height="60" alt="resim" title="resime tıklayarak gönder"><br>
+        <p id="pop" popover>PoP</p>
+        <input type="button" popovertarget="pop" value="bu bir buton tıkla bakam">
+        <input type="button" popovertarget="pop" popovertargetaction="show" value="göster">
+        <input type="button" popovertarget="pop" popovertargetaction="hide" value="gizle">
+        <input type="button" popovertarget="pop" popovertargetaction="toggle" value="ikiside"><br>
+    </form>
+
+    <!-- çok satır giriş alanı -->
+    <label for="aciklama">Açıklama:</label>
+    <textarea wrap="soft" name="aciklama" id="aciklama" cols="30" rows="10">
+        Açıklama Yap...
+    </textarea><br>
+
+    <!-- buton -->
+    <button>buton</button>
+    <button type="button" popovertarget="pop" value="">buton</button>
+    <button disabled="disabled">buton</button>
+    <button type="reset" form="formum">sıfırla</button>
+    <button type="submit" form="formum">gönder</button><br>
+
+    <label for="tarayicilar">Tarayıcılar:</label>
+    <!-- açılır-kapanır seçim listesi -->
+    <select name="tarayicilar" id="tarayicilar" multiple>
+        <!-- liste grubu -->
+        <optgroup label="Popüler">
+            <!-- seçenek -->
+            <option value="Chrome" selected>Chrome</option>
+            <option value="Edge">Edge</option>
+        </optgroup>
+        <optgroup label="Diğerleri">
+            <option value="Safari">Safari</option>
+            <option value="Brave">Brave</option>
+        </optgroup>
+    </select><br>
+
+    <!-- form grubu -->
+    <fieldset>
+        <!-- form grubu başlığı -->
+        <legend>Kayıt Ol</legend>
+    </fieldset><br>
+
+    <label for="araba">Araba:</label>
+    <input list="arabalar" id="araba" name="araba">
+    <!-- önceden tanımlanmış veri listesi -->
+    <datalist id="arabalar">
+        <option value="bmw">
+        <option value="mercedes">
+    </datalist><br>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" min="0" max="100" step="10" id="a">
+        +<input type="range" min="0" max="100" step="10" id="b">
+        <!-- hesaplama çıktısı -->
+        <output name="x" for="a b"></output>
+    </form><br>
+
+    <hr>
+
+    <!-- Çerçeveler -->
+    <!-- satır içi çerçeve (dahili+harici) -->
+    <iframe src="https://haber.com" referrerpolicy="no-referrer" title="haber" width="400" height="300" lang="tr" name="" frameborder="0"></iframe>
+    <iframe srcdoc="<p>selam</p>" allow="" allowpaymentrequest="" sandbox="" frameborder="0"></iframe><br>
+
+    <hr>
+
+    <!-- Görüntüler -->
+    <!-- resim -->
+    <img src="Resim.jpg" width="300" height="250" alt="Doğa Resmi" usemap="#harita" ismap>
+    <!-- harita -->
+    <map name="harita">
+        <!-- soldan boşluk, üstten boşluk, genişlik, uzunluk -->
+        <area shape="rect" coords="0,0,300,110" href="bulut" alt="">
+        <!-- soldan uzaklık, üstten uzaklık, çap -->
+        <area shape="circle" coords="160,110,65" href="dağ">
+        <area shape="rect" coords="0,160,300,250" href="toprak" alt="">
+    </map><br>
+
+    <!-- grafik oluşturmak için bir kap (genelde js ile) -->
+    <canvas style="width: 200px; height: 100px; border: 1px solid black;"></canvas><br>
+
+    <!-- bağımsız içerik -->
+    <figure>
+        <!-- başlığı -->
+        <figcaption>Doğa Resimleri</figcaption>
+        <img src="Resim.jpg" width="200" height="150" alt="">
+    </figure>
+
+    <!-- resim kaynaklandırmada çeşitlilik -->
+    <picture>
+        <!-- kaynak dosya -->
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture><br>
+
+    <!-- svg grafikleri için bir kapsayıcı -->
+    <svg width="100" height="100">
+        <!-- yuvarlak -->
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg><br>
+
+    <hr>
+
+    <!-- Ses ve Video -->
+    <!-- ses -->
+    <audio preload="none" controls loop muted autoplay>
+        <source src="Şehinşah - DAİM.mp3" type="audio/mpeg">
+        Tarayıcı Desteklemiyor.
+    </audio>
+    <audio src=""></audio><br>
+    <!-- video -->
+    <video controls loop muted autoplay poster="Resim.jpg" width="300" height="200">
+        <source src="Şehinşah - DAİM.mp4" type="video/mp4">
+        <!-- metin parçaları -->
+        <track src=".vtt" lang="tr" kind="subtitles" label="Türkçe" srclang="Tr">
+        <track src=".vtt" lang="en" kind="subtitles" label="İngilizce" srclang="En">
+    </video><br>
+
+    <hr>
+
+    <!-- Bağlantılar -->
+    <!-- bir dizi bağlantı -->
+    <nav>
+    <a href="https://haber.com">link</a><br>
+    <a href="https://haber.com" target="_blank">farklı sayfada açılan link</a><br>
+    </nav>
+    <a href="Resim.jpg">Dosya Aç</a><br>
+    <a href="Resim.jpg" download="Doğa Resmi">Dosya İndir</a><br>
+    <a href="mailto:techdevmek@gmail.com">Gmail</a><br>
+    <a href="tel:+905525237453">Tel</a><br>
+    <p id="gel">gel</p>
+    <a href="#gel">git</a><br>
+    <a href="javascript:alert('selam')">js</a><br>
+
+    <hr>
+
+    <!-- Listeler -->
+    <!-- sırasız menü listesi -->
+    <menu>
+        <!-- liste elemanı -->
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </menu><br>
+    <!-- sırasız liste -->
+    <ul>
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ul>
+    <ul>
+        <li>öğe<ul><li>öğe<ul><li>öğe</li></ul></li></ul></li>
+    </ul><br>
+    <!-- sıralı liste -->
+    <ol>
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ol>
+    <ol type="1">
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ol>
+    <ol type="A">
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ol>
+    <ol type="a">
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ol>
+    <ol type="I">
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ol>
+    <ol type="i">
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ol>
+    <ol type="I" start="3" reversed>
+        <li>öğe</li>
+        <li>öğe</li>
+        <li>öğe</li>
+    </ol>
+    <!-- açıklama listesi -->
+    <dl>
+        <!-- açıklanacak terim -->
+        <dt>Youtube:</dt>
+        <!-- açıklaması -->
+        <dd>Video Paylaşım Plaftormu</dd>
+    </dl><br>
+
+    <hr>
+
+    <!-- Tablolar -->
+    <table style="border: 1px solid black;">
+        <!-- tablo başlığı -->
+        <caption>MAAŞ</caption>
+        <!-- tablo şekillendirme kabı -->
+        <colgroup>
+        <!-- sütün şekillendirme -->
+        <col span="1" style="background-color: fuchsia;">
+        </colgroup>
+        <!-- tablo kafası -->
+        <thead>
+        <!-- satır -->
+        <tr>
+            <!-- başlık hücresi -->
+            <th>Ay</th>
+            <th>Maaş</th>
+            <td rowspan="3">Selam</td>
+        </tr>
+        </thead>
+        <!-- tablo gövdesi -->
+        <tbody>
+        <tr>
+            <!-- veri hücresi -->
+            <td>Ocak</td>
+            <td>1.000$</td>
+        </tr>
+        <tr>
+            <td>Şubat</td>
+            <td>1.000$</td>
+        </tr>
+        </tbody>
+        <!-- tablo alt kısım -->
+        <tfoot>
+        <tr>
+            <td colspan="3">Toplam: 2.000$</td>
+        </tr>
+        </tfoot>
+    </table><br>
+
+    <hr>
+
+    <!-- Stiller ve Anlambilim -->
+    <!-- bir bölümdür/kapsayıcıdır - içine herşey gelebilir - block seviyedir (başına ve sonuna birer satır boşluk gelir ve bulunduğu alanın tamamın kaplar) -->
+    <!-- class, id, style alarak kolayca şekillendirilebilir -->
+    <div>selam</div>
+
+    <!-- bir bölümü belirtmek için kullanılır - inline seviyedir - şekillendirilebilir - sadece kendini kapsar -->
+    <span>selam</span><br>
+
+    <!-- bağımsız / kendi kendine yeten bir içerik -->
+    <article>
+        <!-- tanıtım içeriğini kapsar -->
+        <header>
+          <h1>A heading here</h1>
+          <p>Posted by John Doe</p>
+          <p>Some additional information here</p>
+        </header>
+        <p>Lorem Ipsum dolor set amet....</p>
+    </article>
+
+    <!-- bir başlığı ve bir öğeyi çevrele -->
+    <hgroup>
+        <h2>Norway</h2>
+        <p>The land with the midnight sun.</p>
+    </hgroup>
+
+    <!-- ana içerik -->
+    <main></main>
+
+    <!-- belgedeki bir bölüm -->
+    <section></section>
+
+    <!-- aramayla ile ilgili bir dizi öğe -->
+    <search></search>
+
+    <!-- yerleştiği içeriğin dışında bazı içerikler -->
+    <aside></aside>
+
+    <!-- açılıp kapanabilen ayrıntı -->
+    <details>
+        <!-- başlığı -->
+        <summary>Selam</summary>
+        <p>Nasılsın?</p>
+    </details><br>
+
+    <!-- dialog kutucuğu -->
+    <dialog open>Selam</dialog>
+
+    <!-- belirli bir içeriğin makine tarafından okunabilir bir çevirisini eklemek için kullanılır. -->
+    <data value="01">Elma</data><br>
+
+
+
+    
+    <!-- alt bilgi bölümü -->
+    <footer>
+        Alt Bilgi
+    </footer>
+
+</body>
+</html>
